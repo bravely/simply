@@ -1,0 +1,11 @@
+<h1>Search for Doctors</h1>
+
+<%= form_tag(search_path, method: 'post') do %>
+  <%= label_tag(:doctor_name, 'Doctor:') %>
+  <%= text_field_tag(:doctor_name) %>
+
+  <%= label_tag(:location, 'Location:') %>
+  <%= text_field_tag(:location) %>
+  <br>
+  <%= submit_tag('Submit') %>
+<% end %>
